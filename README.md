@@ -1,2 +1,2 @@
 # cryptobit-analytics
-My very first commercial web project
+My very first commercial web project.
