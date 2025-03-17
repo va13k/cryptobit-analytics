@@ -28,7 +28,7 @@ header .navbar-brand {
 header .navbar {
 	background: #1a1a1a !important;
 	font-size: 20px;
-	font-family: "Montserrat";
+    font-family: Montserrat, sans-serif;
 	font-weight: 500;
 }
 
@@ -59,9 +59,9 @@ header .navbar-gray-dark .navbar-toggler-icon {
 
 
 .intropart {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     color: #fff;
-    background-image: url(/jpg_png_images/main_photo.jpg) !important;
+    background-image: url("../jpg_png_images/main_photo.jpg");
     height: 700px;
     width: 100%;
 }
@@ -91,7 +91,7 @@ header .navbar-gray-dark .navbar-toggler-icon {
 
 
 .Services {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
 }
 
 .blueTitle {
@@ -181,7 +181,7 @@ header .navbar-gray-dark .navbar-toggler-icon {
 .OurTeam {
     background-color: #4252e6;
     height: 1140px;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
 }
 
 .whiteTitle {
@@ -226,7 +226,7 @@ header .navbar-gray-dark .navbar-toggler-icon {
 
 .Articles {
     color:#1a1a1a;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     padding-left: 0.5em;
 }
 
@@ -284,7 +284,7 @@ header .navbar-gray-dark .navbar-toggler-icon {
 .Contacts {
     background-color: #1f1f1f;
     height: 600px;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
 }
 
 input::-webkit-outer-spin-button,
@@ -314,8 +314,8 @@ input::-webkit-inner-spin-button {
 
 
 .footer {
-    color: #fff; /* Цвет текста */
-    background: #1a1a1a;;
+    color: #fff;
+    background: #1a1a1a;
     height: 120px;
     width: 100%;
 }

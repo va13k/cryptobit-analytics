@@ -16,8 +16,7 @@ $db = new PDO("mysql:host=$dbhost; dbname=$dbname;", $username, $password);
 function getArticlesOnMainPage()
 {
 	global $db;
-	$articles = $db->query("SELECT * FROM articles LIMIT 3");
-	return $articles;
+	return $db->query("SELECT * FROM articles LIMIT 3");
 }
 
 function textPreview($value, $limit = 300)

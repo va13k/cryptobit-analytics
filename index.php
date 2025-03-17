@@ -4,8 +4,6 @@ include_once "website_files/includes/connect.php";
 include_once 'website_files/includes/db.php';
 ?>
 
-<!-- -------------------------------------------------------------------------------------------------------- -->
-
 <div class="intropart">
 	<div class="text-intro">
 		<p class="introtext">CRYPTOBIT ANALYTICS</p>
@@ -16,14 +14,12 @@ include_once 'website_files/includes/db.php';
 
 <br>
 
-<!-- -------------------------------------------------------------------------------------------------------- -->
-
 <section class="Services">
 	<div class="container-fluid">
 		<p class="blueTitle">УСЛУГИ</p>
 		<div class="row">
 			<div class="card col-xs-4">
-				<img class="card-img" id="card-image1" src="/jpg_png_images/coins.png" alt="background section">
+				<img class="card-img" id="card-image1" src="jpg_png_images/coins.png" alt="background section">
 				<div class="card-img-overlay">
 					<p class="card-title">Восстановление цифровых активов</p>
 					<p class="card-text">Помогаем жертвам киберпреступлений, связанных с криптовалютными средствами.
@@ -32,7 +28,7 @@ include_once 'website_files/includes/db.php';
 			</div>
 
 			<div class="card col-xs-4">
-				<img class="card-img" id="card-image2" src="/jpg_png_images/marking.jpg" alt="background section">
+				<img class="card-img" id="card-image2" src="jpg_png_images/marking.jpg" alt="background section">
 				<div class="card-img-overlay">
 					<p class="card-title">Маркирование<br>средств</p>
 					<p class="card-text">Распространяем информацию о похищенных криптовалютных активах
@@ -42,7 +38,7 @@ include_once 'website_files/includes/db.php';
 			</div>
 
 			<div class="card col-xs-4">
-				<img class="card-img" id="card-image3" src="/jpg_png_images/analys.jpg" alt="background section">
+				<img class="card-img" id="card-image3" src="jpg_png_images/analys.jpg" alt="background section">
 				<div class="card-img-overlay">
 					<p class="card-title">Анализ<br>транзакций</p>
 					<p class="card-text">Исследуем транзакции,
@@ -53,7 +49,7 @@ include_once 'website_files/includes/db.php';
 			</div>
 		</div>
 		<br>
-		<div class="othr-services-btn">
+		<div class="text-center">
 			<button type="button" class="btn btn-outline-primary">К остальным услугам</button>
 		</div>
 	</div>
@@ -65,9 +61,9 @@ include_once 'website_files/includes/db.php';
 <!-- -------------------------------------------------------------------------------------------------------- -->
 <section class="OurTeam">
 	<br>
-	<center>
+	<div class="text-center">
 		<p class="whiteTitle">О нашей команде</p>
-	</center>
+	</div>
 	<br>
 	<div class="container mx-auto">
 		<div class="ourTeam-text">
@@ -79,20 +75,20 @@ include_once 'website_files/includes/db.php';
 				a incidunt labore corrupti inventore sint quaerat ut repellat excepturi!</p>
 			<br>
 			<div class="ourTeam-stages">
-				<center>
+				<div class="text-center">
 					<p class="whiteTitle">Этапы работы</p>
-				</center>
+				</div>
 				<br>
 				<div class="stages">
-					<p><img src="/svg_images/etap1.svg" alt="STAGE 1">Получаем задание после связи с клиентом</p>
-					<p><img src="/svg_images/etap2.svg" alt="STAGE 2">Изучаем и подписываем документы</p>
-					<p><img src="/svg_images/etap3.svg" alt="STAGE 3">Работаем над заказом</p>
-					<p><img src="/svg_images/etap4.svg" alt="STAGE 4">Оценка результата клиентом</p>
+					<p><img src="svg_images/etap1.svg" alt="STAGE 1">Получаем задание после связи с клиентом</p>
+					<p><img src="svg_images/etap2.svg" alt="STAGE 2">Изучаем и подписываем документы</p>
+					<p><img src="svg_images/etap3.svg" alt="STAGE 3">Работаем над заказом</p>
+					<p><img src="svg_images/etap4.svg" alt="STAGE 4">Оценка результата клиентом</p>
 				</div>
 			</div>
 		</div>
 		<br>
-		<div class="more-about-team-btn">
+		<div class="text-center">
 			<button type="button" class="btn btn-outline-primary">Узнать больше <br> о команде</button>
 		</div>
 	</div>
@@ -136,18 +132,18 @@ include_once 'website_files/includes/db.php';
 <section class="Contacts">
 	<div class="container" style="width: 700px;">
 		<br>
-		<center>
+		<div class="text-center">
 			<p class="whiteTitle">СВЯЗЬ С НАМИ</p>
-		</center><br>
+		</div><br>
 		<br>
 		<form>
 			<div class="center">
 				<div class="form-group">
 					<input type="text" class="form-control form-control-lg" name="user_name"
-						placeholder="Введите ваше имя">
+						placeholder="Введите ваше имя" required>
 					<br>
 					<input id="phone" step="any" type="number" class="form-control form-control-lg" name="user_phone"
-						placeholder="Введите ваш номер телефона" value="">
+						placeholder="Введите ваш номер телефона" value="" required>
 					<br>
 					<p class="contacts-title">Выберите где вам лучше связаться </p>
 					<br>
@@ -156,9 +152,7 @@ include_once 'website_files/includes/db.php';
 							<input type="radio" class="form-check-input" name="ContactVar" id="Viber" value="Viber">
 							<label class="form-check-label" for="Viber">
 								<p class="center">
-									<img src="jpg_png_images/Viber.png" alt="Viber" height="50" width="50">
-
-									Viber
+									<img src="jpg_png_images/Viber.png" alt="Viber" height="50" width="50">Viber
 								</p>
 							</label>
 						</div>
@@ -168,8 +162,8 @@ include_once 'website_files/includes/db.php';
 								value="Telegram">
 							<label class="form-check-label" for="Telegram">
 								<p class="center">
-									<img src="jpg_png_images/Telegram.png" alt="Telegram" height="50" width="50">
-									Telegram
+									<img src="jpg_png_images/Telegram.png" alt="Telegram" height="50"
+										width="50">Telegram
 								</p>
 							</label>
 						</div>
@@ -190,9 +184,7 @@ include_once 'website_files/includes/db.php';
 								checked>
 							<label class="form-check-label" for="Phone">
 								<p class="center">
-									<img src="jpg_png_images/Phone.png" alt="OnlyPhone" height="50" width="50">
-
-									Телефон
+									<img src="jpg_png_images/Phone.png" alt="OnlyPhone" height="50" width="50">Телефон
 								</p>
 							</label>
 						</div>
