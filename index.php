@@ -58,7 +58,6 @@ include_once 'website_files/includes/db.php';
 <br>
 <br>
 
-<!-- -------------------------------------------------------------------------------------------------------- -->
 <section class="OurTeam">
 	<br>
 	<div class="text-center">
@@ -96,7 +95,6 @@ include_once 'website_files/includes/db.php';
 
 <br>
 
-<!-- -------------------------------------------------------------------------------------------------------- -->
 <section class="Articles">
 	<p class="blueTitle">СТАТЬИ И НОВОСТИ</p>
 	<div class="container-fluid">
@@ -126,8 +124,6 @@ include_once 'website_files/includes/db.php';
 </section>
 
 <br>
-
-<!-- -------------------------------------------------------------------------------------------------------- -->
 
 <section class="Contacts">
 	<div class="container" style="width: 700px;">
