@@ -9,6 +9,8 @@ git clone https://github.com/<YOUR_GITHUB_USERNAME>/cryptobitanalytics.git
 cd cryptobitanalytics
 ```
 
+If you are using MAMP it is more preferable that you will use the htdocs directory to store the website.
+
 ## How to Set Up the Database
 
 1. Install MAMP: https://www.mamp.info/en
