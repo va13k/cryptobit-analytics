@@ -1,0 +1,153 @@
+@media(min-width:0px) and (max-width:320px) {
+
+    .nav-brand {
+        width: 100%;
+        height: 20px;
+    }
+
+    .navbar {
+        background: #1a1a1a !important;
+        font-size: 15px;
+        font-family: "Montserrat";
+        font-weight: 500;
+    }
+
+
+
+
+
+    .intropart {
+        position: relative;
+        font-family: Montserrat;
+        font-weight: 550;
+        color: #fff;
+        padding-bottom: 5%;
+    }
+
+    .introtext {
+        position: absolute;
+        padding-top: 10%;
+        font-size: 20px;
+        letter-spacing: 2px;
+        font-weight: 550;
+    }
+    
+    .introtext2 {
+        position: absolute;
+        padding-top: 25%;
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+    
+    .introtext3 {
+        position: absolute;
+        padding-top: 32%;
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+
+
+
+
+    .Services {
+        padding-top: 100px !important;
+    }
+
+    .blueTitle {
+        text-align: center;
+        color:#4252e6;
+        font-size: 30px;
+        font-weight: 500;
+        padding-top: 1em;
+    }
+    
+    .row {
+        justify-content: space-around;
+    }
+    
+    .card {
+        width: 270px;
+        height: 410px;
+        margin: 15px !important;
+        border-radius: 30px !important;
+    }
+    
+    .card-img {
+        width: 270px;
+        height: 410px;
+        border-radius: 30px !important;
+        filter: blur(3px) brightness(25%);
+    }
+    
+    .card-body {
+        padding: 0px !important;
+        position: relative;
+    }
+    
+    .card-title {
+        font-weight: 600;
+        text-align: center;
+        font-size: 25px;
+        padding-top: 40%;
+        color:#4d5ce6;
+    }
+    
+    .card-text {
+        visibility: hidden;
+        margin-top: 7%;
+        text-align: left;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+    
+    .card:hover .card-title{
+        padding-top: 0.1px !important;
+        transition: 1s;
+    }
+    
+    .card:hover .card-text{
+        visibility: visible;
+        padding-top: 0.1px !important;
+    }
+    
+    .card:hover .card-img{
+        visibility: hidden;
+    }
+    
+    .btn-outline-primary {
+        font-weight: 500 !important;
+        color:#4252e6 !important;
+        font-size: 20px !important;
+        word-spacing: 2px;
+        border-color: #4252e6 !important;
+    }
+    
+    .btn-outline-primary:hover {
+        background-color: #4252e6 !important;
+        color: #fff !important;
+    }
+
+
+
+
+
+    .footer-image {
+        display: none;
+    }
+
+    .footer-text {
+        padding-top: 6%;
+        font-size: 18px;
+        font-weight: 500;
+        padding-left: 3%;
+        text-align: left;
+    }
+
+    .footer {
+        color: #fff;
+        background: #1a1a1a;;
+        height: 80px;
+    }
+}

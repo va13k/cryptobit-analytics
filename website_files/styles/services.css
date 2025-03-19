@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,300;1,500&display=swap');
+
+.ServicesMain .intropart {
+    width: 100%;
+    height: 500px;
+}
+
+.ServicesMain .intropart p {
+    font-family: Montserrat;
+    font-size: 67px;
+    color: #fff;
+    padding-top: 10%;
+}
+
+.servicesMain .row {
+    justify-content: space-evenly;
+}
+
+.servicesMain .card {
+    width: 20em;
+    height: auto;
+    margin: 15px;
+    border-color: #4252e6;
+    border-width: 2px;
+    border-radius: 30px !important;
+}
+
+.servicesMain .card:last-child {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.servicesMain .card-title {
+    font-family: Montserrat;
+    font-weight: 600;
+    text-align: center;
+    font-size: 25px;
+    margin: 0px !important;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: #4252e6;
+}
+
+.servicesMain .card-text {
+    font-family: 'Fira Sans';
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.servicesMain .card-details {
+    font-family: 'Fira Sans';
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+hr {
+    margin: 3%;
+}
+
+.servicesMain .btn {
+    border-radius: 10px;
+}
+
+
+
+
+.Contacts {
+    background-color: #000;
+    height: 600px;
+    font-family: Montserrat;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.form-check {
+    color: white !important;
+    width: 80px !important;
+    display: flex !important;
+}
+
+.contacts-title {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+}   
+
+
+/*-----Phone Adaptation-----*/
+
+
+/*Tablet only*/
+@media(min-width: 767px) and (max-width: 885px){
+    .intropart {
+        padding-top: 15% !important;
+    }
+
+    .ServicesMain .card{
+        max-width: 100% !important;
+        width: 85% !important;
+        flex: 100%;
+    }
+
+    .servicesMain .card:last-child {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .ourClients {
+        height: auto;
+    }
+
+    .Contacts {
+        height: auto;
+    }
+
+    .modal-dialog {
+        max-width: 700px;
+        margin-top: 20%;
+    }
+}
+
+
+/*all phones*/
+@media(min-width: 0px) and (max-width:  767px){
+    .intropart {
+        padding-top: 30% !important;
+    }
+
+    .ServicesMain .card{
+        max-width: 100% !important;
+        width: 85% !important;
+        flex: 100%;
+    }
+
+    .servicesMain .card:last-child {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+
+    .Contacts {
+        height: auto;
+    }
+
+
+    .ourClients {
+        height: auto;
+    }
+}
+
+
+/*medium phone*/
+@media(min-width: 0px) and (max-width:  391px){
+    .Contacts .row {
+         margin-right: 20px !important;
+    }
+}
+
+
+/*small phone*/
+@media(min-width: 0px) and (max-width:  361px){
+    .introText {
+        padding-top: 20% !important;
+    }
+
+
+    .ServicesMain .card{
+        max-width: 100% !important;
+        width: 85% !important;
+        flex: 151px;
+    }
+
+    .Contacts .row {
+         margin-right: 10px !important;
+    }
+}

@@ -1,0 +1,97 @@
+
+
+.intropart {
+    font-family: Montserrat;
+    color: #fff;
+    height: 500px;
+}
+
+.text-intro {
+    text-align: center;
+    font-weight: 400;
+}
+
+.introtext {
+    padding-top: 10%;
+    font-size: 67px;
+}
+
+
+
+
+.Contacts {
+    background-color: #1f1f1f;
+    height: 600px;
+    font-family: Montserrat;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.row {
+    justify-content: space-evenly;
+}
+
+.form-check {
+    color: white !important;
+    width: 80px !important;
+    display: flex !important;
+}
+
+.contacts-title {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+}   
+
+
+
+/*-----Phone Adaptation------*/
+@media (min-width: 0px) and (max-width: 767px){
+   .introtext {
+        padding-top: 20%;
+        font-size: 62px;
+        font-weight: 500;
+    }
+
+   .footer-text {
+    padding-top: 7%;
+    font-size: 17px;
+    } 
+}
+
+
+@media(min-width: 0px) and (max-width:  391px){
+}
+
+@media(min-width: 0px) and (max-width:  361px){
+    .intropart {
+        height: 400px;
+    }
+    .introtext {
+        padding-top: 22%;
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+
+
+    .Contacts{
+        height: auto;
+    }
+
+    .Contacts .row {
+        justify-content: space-between;
+        margin-right: 40px;
+        margin-left: 10px;
+    }
+
+
+
+    .form-group {
+        margin-bottom: -2rem !important;
+    }
+}

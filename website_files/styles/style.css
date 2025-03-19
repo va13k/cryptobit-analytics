@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    user-select: none;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+
+
+header .nav-brand {
+    width: 120%;
+    height: 54px;
+}
+
+header .navbar-brand {
+    padding-bottom: 0px;
+}
+
+header .navbar {
+	background: #1a1a1a !important;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+
+
+header .dropdown {
+    margin-right: 55px;
+
+}
+
+header .nav-link {
+	color: white;
+	margin-left: 40px;
+}
+
+header .nav-link:hover {
+	transition-duration: 0.4s;
+	color: #4252e6;
+}
+
+header .navbar-gray-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+
+.btn-outline-primary {
+    font-weight: 500 !important;
+    color:#4252e6 !important;
+    font-size: 20px !important;
+    word-spacing: 2px !important;
+    border-color: #4252e6 !important;
+}
+
+.btn-outline-primary:hover {
+    border-color: #4d5ce6 !important;
+    background-color: #4252e6 !important;
+    color: #fff !important;
+}
+
+.whiteTitle {
+    color:#fff;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.blueTitle {
+    text-align: center;
+    color:#4252e6;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.center {
+     text-align: center;
+}
+
+.ourClients {
+    width: 100%;
+    height: 450px;
+    background-color: #4252e6;
+}
+
+.ourClients .row {
+    justify-content: space-evenly;
+}
+
+.ourClients a {
+    margin: 5px;
+}
+
+.ourClients img {
+    filter: brightness(0%);
+    height: 60px;
+    width: 190px;
+    margin: 30px;
+}
+
+.ourClients img:hover {
+    filter: brightness(100%);
+    transition: 1s;
+}
+
+
+
+
+.footer {
+    color: #fff;
+    background: #1a1a1a;
+    height: 120px;
+    width: 100%;
+}
+
+.footer-brand {
+    position: absolute;
+    margin-left: 50%;
+}
+
+.footer-image {
+    width: 223px;
+    height: 135px;
+    padding-bottom: 5%;
+}
+
+
+.footer-text {
+    padding-top: 3%;
+    padding-left: 5%;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    user-select: text !important;
+}
+
+
+
+.copyright {
+    position: relative;
+    height: 35px;
+    width: 100%;
+    background: #1f1f1f;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    padding: 7px;
+}
+
+
+
+
+/*-----Phone Adaptation------*/
+
+@media(min-width: 0px) and (max-width:  767px){
+    .footer-image{
+        display: none;
+    }
+    .footer-text{
+        padding-top: 7%;
+        font-size: 17px;
+    }
+}

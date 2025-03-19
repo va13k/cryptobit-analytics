@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;600&display=swap');
+
+.Single .single-title {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+}
+
+.Single .img-thumbnail {
+    width: 100%;
+    height: auto;
+}
+
+.Single .single-content {
+    font-family: "Fira Sans";
+    font-size: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.Comments {
+    background-color: #1f1f1f;
+    font-family: Montserrat;
+}
+
+.Comments p {
+    font-size: 24px;
+    color: #fff;
+}
+
+.Comments h1, h2 {
+    color: #4252e6;
+}
+
+.Comments .comment-time {
+    font-size: 18px;
+    text-align: right;
+}
+
+.Comments .comment-text {
+    font-family: "Fira Sans";
+}
+
+.Comments .form-input {
+    width: 100%;
+    font-size: 20px;
+}
+
+.Comments textarea {
+    height: 200px;
+}
