@@ -94,10 +94,6 @@ php -S localhost:8000 -t public
 - Ensure it was properly imported from `cryptobitanalytics.sql`.
 
 ---
-
-## License
-This project is licensed under the [MIT License](LICENSE).
-
 ---
 
 ## Contact
