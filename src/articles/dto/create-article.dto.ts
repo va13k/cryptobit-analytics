@@ -1,6 +1,5 @@
 import {
   IsArray,
-  IsISO8601,
   IsNotEmpty,
   IsOptional,
   IsString,
@@ -20,16 +19,12 @@ export class CreateArticleDto {
   @IsString()
   imageUrl?: string;
 
-  @IsOptional() // ✅ Now it's optional
+  @IsOptional()
   @IsIn(['draft', 'published', 'archived'])
-  status?: string; // ✅ Changed to optional
+  status?: string;
 
   @IsOptional()
   @IsArray()
   @IsString({ each: true })
   tags?: string[];
-
-  @IsOptional()
-  @IsISO8601()
-  publishedAt?: string;
 }
