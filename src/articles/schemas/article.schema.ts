@@ -21,9 +21,6 @@ export class Article extends Document {
 
   @Prop({ type: [String], default: () => [] })
   tags: string[];
-
-  @Prop({ type: Date, default: null })
-  publishedAt?: Date;
 }
 
 export const ArticleSchema = SchemaFactory.createForClass(Article);
