@@ -9,8 +9,11 @@ export class Admin extends Document {
   @Prop({ required: true, unique: true })
   email: string;
 
-  @Prop({ required: true })
-  password: string;
+  @Prop({ required: true, select: false })
+  passwordHash: string;
+
+  @Prop({ required: true, enum: ['admin', 'superadmin', 'editor'] })
+  role: string;
 }
 
 export const AdminSchema = SchemaFactory.createForClass(Admin);

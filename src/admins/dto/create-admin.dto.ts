@@ -9,5 +9,5 @@ export class CreateAdminDto {
   email: string;
 
   @IsNotEmpty()
-  password: string;
+  passwordHash: string;
 }
