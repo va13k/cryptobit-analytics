@@ -107,13 +107,14 @@ describe('ArticlesService', () => {
   });
 
   it('should create an article', async () => {
-    const article = await service.create({
+    const newArticleDto: CreateArticleDto = {
       title: 'Test Article',
       content: 'Test Content',
       imageUrl: 'images/articles/test.jpg',
       status: 'draft',
       tags: ['test'],
-    });
+    };
+    const article = await service.create(newArticleDto);
     expect(article).toEqual({
       _id: 'mockedId',
       title: 'Test Article',
