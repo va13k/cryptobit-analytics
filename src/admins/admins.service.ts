@@ -12,14 +12,23 @@ export class AdminsService {
   ) {}
 
   async findAll(): Promise<Admin[]> {
-    return this.adminModel.find().exec();
+    return this.adminModel.find().select('-passwordHash').exec();
+  }
+
+  async findByEmail(email: string): Promise<Admin | null> {
+    return this.adminModel.findOne({ email }).select('+passwordHash').exec();
   }
 
   async findOne(id: string): Promise<Admin> {
-    const admin = await this.adminModel.findById(id).exec();
+    const admin = await this.adminModel
+      .findById(id)
+      .select('-passwordHash')
+      .exec();
+
     if (!admin) {
       throw new NotFoundException(`Admin with ID ${id} not found`);
     }
+
     return admin;
   }
 
@@ -31,6 +40,7 @@ export class AdminsService {
   async update(id: string, updateAdminDto: UpdateAdminDto): Promise<Admin> {
     const updatedAdmin = await this.adminModel
       .findByIdAndUpdate(id, updateAdminDto, { new: true })
+      .select('-passwordHash')
       .exec();
 
     if (!updatedAdmin) {
@@ -41,7 +51,10 @@ export class AdminsService {
   }
 
   async remove(id: string): Promise<Admin> {
-    const deletedAdmin = await this.adminModel.findByIdAndDelete(id).exec();
+    const deletedAdmin = await this.adminModel
+      .findByIdAndDelete(id)
+      .select('-passwordHash')
+      .exec();
 
     if (!deletedAdmin) {
       throw new NotFoundException(`Admin with ID ${id} not found`);
