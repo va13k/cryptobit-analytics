@@ -3,6 +3,7 @@ import { AdminsService } from './admins.service';
 import { getModelToken } from '@nestjs/mongoose';
 import { Admin } from './schemas/admin.schema';
 import { CreateAdminDto } from './dto/create-admin.dto';
+import { UpdateAdminDto } from './dto/update-admin.dto';
 
 describe('AdminsService', () => {
   let service: AdminsService;
@@ -16,16 +17,21 @@ describe('AdminsService', () => {
 
   const mockAdminModel = Object.assign(mockAdminConstructor, {
     find: jest.fn().mockReturnValue({
-      exec: jest
-        .fn()
-        .mockResolvedValue([
-          { name: 'TestAdmin1', email: 'testadmin1@mail.com' },
+      select: jest.fn().mockReturnValue({
+        exec: jest.fn().mockResolvedValue([
+          {
+            name: 'TestAdmin1',
+            email: 'testadmin1@mail.com',
+          },
         ]),
+      }),
     }),
     findById: jest.fn().mockReturnValue({
-      exec: jest.fn().mockResolvedValue({
-        name: 'TestAdmin1',
-        email: 'testadmin1@mail.com',
+      select: jest.fn().mockReturnValue({
+        exec: jest.fn().mockResolvedValue({
+          name: 'TestAdmin1',
+          email: 'testadmin1@mail.com',
+        }),
       }),
     }),
     create: jest.fn().mockImplementation((dto: CreateAdminDto) => ({
@@ -33,15 +39,19 @@ describe('AdminsService', () => {
       save: jest.fn().mockResolvedValue({ _id: 'mockedId', ...dto }),
     })),
     findByIdAndUpdate: jest.fn().mockReturnValue({
-      exec: jest.fn().mockResolvedValue({
-        name: 'UpdatedAdmin',
-        email: 'updatedadmin@mail.com',
+      select: jest.fn().mockReturnValue({
+        exec: jest.fn().mockResolvedValue({
+          name: 'UpdatedAdmin',
+          email: 'updatedadmin@mail.com',
+        }),
       }),
     }),
     findByIdAndDelete: jest.fn().mockReturnValue({
-      exec: jest.fn().mockResolvedValue({
-        name: 'DeletedAdmin',
-        email: 'deletedadmin@mail.com',
+      select: jest.fn().mockReturnValue({
+        exec: jest.fn().mockResolvedValue({
+          name: 'DeletedAdmin',
+          email: 'deletedadmin@mail.com',
+        }),
       }),
     }),
   });
@@ -80,15 +90,29 @@ describe('AdminsService', () => {
   });
 
   it('should create an admin', async () => {
-    const adminData = { name: 'Admin02', email: 'admin02@mail.com' };
-    const result = await service.create(adminData as Admin);
-    expect(result).toEqual({ _id: 'mockedId', ...adminData });
+    const newAdmin: CreateAdminDto = {
+      name: 'Admin02',
+      email: 'admin02@mail.com',
+      passwordHash: 'admin02password',
+    };
+    const result = await service.create(newAdmin);
+    expect(result).toEqual(
+      expect.objectContaining({
+        _id: 'mockedId',
+        name: 'Admin02',
+        email: 'admin02@mail.com',
+        passwordHash: expect.any(String) as unknown as string,
+      }),
+    );
   });
 
   it('should update an admin', async () => {
-    const adminData = { name: 'UpdatedAdmin', email: 'updatedadmin@mail.com' };
-    const result = await service.update('mockedId', adminData as Admin);
-    expect(result).toEqual(adminData);
+    const updatedAdmin: UpdateAdminDto = {
+      name: 'UpdatedAdmin',
+      email: 'updatedadmin@mail.com',
+    };
+    const result = await service.update('mockedId', updatedAdmin);
+    expect(result).toEqual(updatedAdmin);
   });
 
   it('should delete an admin', async () => {

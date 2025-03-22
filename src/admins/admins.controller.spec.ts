@@ -73,7 +73,7 @@ describe('AdminsController', () => {
     const dto: CreateAdminDto = {
       name: 'TestAdmin1',
       email: 'testadmin1@mail.com',
-      password: 'password',
+      passwordHash: 'password',
     };
     const result = await controller.create(dto);
     expect(result).toEqual({
