@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `articles` (
-  `id` int NOT NULL,
+  `id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `text` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -49,11 +49,7 @@ INSERT INTO `articles` (`id`, `title`, `text`, `image`, `date`) VALUES
 -- Indexes for dumped tables
 --
 
---
--- Indexes for table `articles`
---
-ALTER TABLE `articles`
-  ADD PRIMARY KEY (`id`);
+
 
 --
 -- AUTO_INCREMENT for dumped tables
