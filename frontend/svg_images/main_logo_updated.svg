@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<svg width="114.20000000000003" height="116.19999999999999" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1">
+
+ <g class="layer">
+  <title>Layer 1</title>
+  <g id="layer1"/>
+  <rect fill="#4551e4" fill-rule="evenodd" height="114" id="rect65" ry="29.87" stroke-width="1.05" width="111.33" x="1.35" y="1.19"/>
+  <path d="m70.99,19.5l14.03,8.48l0,79.53l-14.03,-8.33l0,-79.68z" fill="#cccccc" id="rect7405" stroke-width="0"/>
+  <path d="m49.16,29.54l14.03,8.48l0,56.51l-14.03,-8.32l0,-56.67z" fill="#cccccc" id="rect7405-1" stroke-width="0"/>
+  <path d="m27.62,37.38l14.03,8.48l-0.03,35.86l-14.01,-8.3l0.01,-36.04z" fill="#cccccc" id="rect7405-1-2" stroke-width="0"/>
+  <path d="m6.75,44.2l14.03,8.48l0,16.64l-14.03,-8.26l0,-16.86z" fill="#cccccc" id="rect7405-1-2-5" stroke-width="0"/>
+  <path d="m85.02,11.68l14.49,7.87l-14.49,8.43l-14.03,-8.48l14.03,-7.82z" fill="#999999" id="rect8439" stroke-width="0"/>
+  <path d="m63.19,21.72l7.78,4.55l-0.02,6.81l-7.76,4.94l-14.03,-8.48l14.03,-7.82z" fill="#999999" id="rect8439-8" stroke-width="0"/>
+  <path d="m41.65,29.55l7.51,4.49l-0.04,7.08l-7.47,4.74l-14.03,-8.48l14.03,-7.83z" fill="#999999" id="rect8439-8-9" stroke-width="0"/>
+  <path d="m20.78,36.38l6.83,4l0,7.98l-6.83,4.32l-14.03,-8.48l14.03,-7.82z" fill="#999999" id="rect8439-8-9-0" stroke-width="0"/>
+  <path d="m85.02,27.98l14.49,-8.43l-0.02,79.56l-14.47,8.4l0,-79.53z" fill="#000000" id="rect8828" stroke-width="0"/>
+  <path d="m63.19,38.02l7.76,-4.94l0.04,56.8l-7.8,4.65l0,-56.51z" fill="#000000" id="rect8828-1" stroke-width="0"/>
+  <path d="m41.65,45.86l7.47,-4.74l0.04,36.07l-7.54,4.53l0.03,-35.86z" fill="#000000" id="rect8828-1-0" stroke-width="0"/>
+  <path d="m20.78,52.68l6.83,-4.32l0.01,16.6l-6.84,4.36l0,-16.64z" fill="#000000" id="rect8828-1-0-2" stroke-width="0"/>
+ </g>
+</svg>
